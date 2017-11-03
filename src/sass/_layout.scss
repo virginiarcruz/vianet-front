@@ -1,0 +1,151 @@
+/* ======================================================================== *
+ * RESETS
+ * ======================================================================== */
+ *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+iframe {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+img,
+picture,
+video,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: baseline;
+  border: 0 none;
+}
+
+li,
+ul
+ol {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+tr,
+td {
+  padding: 4%;
+}
+
+table {
+  margin-bottom: 20px;
+  color: #4F4F4F;
+}
+
+table, th, td {
+  border: 1px solid #C5C5C5;
+  border-collapse: collapse;
+}
+
+ html, body {
+	 font-family: 'Open Sans', sans-serif;
+	 height:100%;
+   color: #333;
+   font-size: 16px;
+ }
+
+a { text-decoration: none;}
+h1 { letter-spacing: normal}
+img {width: 100%; height: 100%}
+
+
+
+/* GERAIS */
+
+.nav-item {
+  font-size: 1.5em;
+  color: $color-red-primary;
+}
+
+.title-destaques {
+  font-size: 1.2em;
+  color: $color-gray-primary;
+}
+
+.icone {
+  background: url(../img/sprite.png) no-repeat;
+}
+
+.icone-nav {
+  background-position: -2px 0;
+}
+.icone-metros {
+  background-position: -3px -36px;
+}
+.icone-quarto {
+  background-position: -2px -65px;
+}
+.icone-banho {
+  background-position: -5px -97px;
+}
+.icone-vagas {
+  background-position: -1px -122px;
+}

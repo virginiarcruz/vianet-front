@@ -1,0 +1,328 @@
+/* ======================================================================== *
+ * RESETS
+ * ======================================================================== */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+iframe {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+img,
+picture,
+video,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: baseline;
+  border: 0 none;
+}
+
+li,
+ul
+ol {
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+}
+
+tr,
+td {
+  padding: 4%;
+}
+
+table {
+  margin-bottom: 20px;
+  color: #4F4F4F;
+}
+
+table, th, td {
+  border: 1px solid #C5C5C5;
+  border-collapse: collapse;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  color: #333;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  letter-spacing: normal;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* GERAIS */
+.nav-item {
+  font-size: 1.5em;
+  color: #990000;
+}
+
+.title-destaques {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.icone {
+  background: url(../img/sprite.png) no-repeat;
+}
+
+.icone-nav {
+  background-position: -2px 0;
+}
+
+.icone-metros {
+  background-position: -3px -36px;
+}
+
+.icone-quarto {
+  background-position: -2px -65px;
+}
+
+.icone-banho {
+  background-position: -5px -97px;
+}
+
+.icone-vagas {
+  background-position: -1px -122px;
+}
+
+/* NAV */
+.nav-item {
+  text-align: center;
+}
+
+/* ICONES */
+.icone {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.icone-nav {
+  width: 50px;
+  margin: 10px auto;
+}
+
+/* NAV */
+.nav-item.hide {
+  color: #d88587;
+}
+.nav-item.hide .icone {
+  display: none;
+}
+
+/* DESTAQUES CASAS */
+.destaques {
+  margin-bottom: 30px;
+}
+
+.destaque-item {
+  height: 17vh;
+}
+.destaque-item .destaque-img-container {
+  width: 49%;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+.destaque-item .destaque-img-container .destaque-img {
+  height: 17vh;
+  max-width: none;
+  width: auto;
+}
+
+.destaque-dados {
+  display: inline-block;
+  width: 47%;
+}
+.destaque-dados .destaque-icones {
+  padding: 15px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.destaque-dados .destaque-icone-item {
+  width: 45%;
+  display: inline-block;
+  font-size: .7em;
+}
+.destaque-dados .destaque-icone-item .icone {
+  float: left;
+}
+.destaque-dados .valor-destaque {
+  font-size: 1em;
+  color: #990000;
+  margin-top: 15px;
+}
+.destaque-dados .valor-destaque .icone-adicionar {
+  background: none;
+  color: #990000;
+  font-weight: 700;
+  font-size: 1.7em;
+  line-height: 15px;
+  padding: 8px;
+  margin-top: -10px;
+  width: auto;
+  height: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.destaque-dados .valor-destaque .icone-adicionar:hover {
+  background: #393939;
+  color: #fff;
+  opacity: 0.5;
+}
+
+/*  MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.modal .modal-header {
+  background: #990000;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal-content .modal-form {
+  padding: 10px 35px;
+}
+.modal-content .modal-form .form-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-content .modal-form .form-item {
+  margin-bottom: 20px;
+}
+.modal-content .button.button-primary {
+  background: #990000;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: none;
+}
+.modal-content .form-footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* iPads (landscape) ----------- */
+/* Desktops and laptops ----------- */
+
+/*# sourceMappingURL=style.css.map */
