@@ -4,9 +4,6 @@
 - Grunt
 - SASS
 
-## Versão de servidor
-
-
 ## Instalação
 
 - Entrar no diretório do projeto e executar o comando:
